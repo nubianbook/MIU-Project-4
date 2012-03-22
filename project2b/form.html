@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Form</title>
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+		<link type="text/css" src="css/style"/> 
+	</head>
+	
+	<body>
+		<div data-role="page" id="my_form" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Form-B</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<h2 align="center">Click Genre</h2>
+		  			
+		  		<form action="" method="post" id="myform">
+		  			<h5>* Required Fields</h5>
+		  			<label for="genre" class="select"></label> 
+						<select name="genre" id="genre" data-theme="b" data-native-menu="false"> 
+							 <option selected value="select">--- Select Genre ---</option> 
+							 <option value="siFi">SiFi</option> 
+							 <option value="drama">Drama</option>
+							 <option value="horror">Horror</option>
+							 <option value="family">Family</option>
+							 <option value="romance">Romance</option>
+							 <option value="documentary">Documentary</option>
+						</select>
+						
+						<br />
+						
+						<div data-role="fieldcontain">
+							<label for="title">* Movie Title:</label>
+							<input type="text" name="title" id="title" placeholder="Movie Title" class="required"/>
+						</div>
+						<div data-role="fieldcontain">
+							<label for="mydate">* Date Watched:</label>	
+								<input name="mydate" id="mydate" type="text" placeholder="Date Watched" data-role="datebox" 
+								data-options='{"mode": "calbox", 'calTodayButton': true}' class="required">    			
+						</div>
+						<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup>"	
+							<legend>How did you acquire this movie?<br/><small>(check all that apply)</small></legend> 
+								<input type="checkbox" value="download" name="checkbox-1" id="checkbox-0" class="custom" data-theme="b" checked="checked" class="required"/>
+								<label for="checkbox-0">Download</label>
+								<input type="checkbox" value="purchase" name="checkbox-1" id="checkbox-2" class="custom" data-theme="b"/>
+								<label for="checkbox-2">Purchase</label>
+								<input type="checkbox" value="purchase" name="checkbox-3" id="checkbox-3" class="custom" data-theme="b"/>
+								<label for="checkbox-3">Gift</label>
+							</fieldset>	
+							</div>
+							
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Have you seen this movie before?</legend>
+					     	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" class="required" checked="checked" data-theme="b"/>
+					     	<label for="radio-choice-1">Yes, I have</label>
+					     	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" data-theme="a"/>
+					     	<label for="radio-choice-2">No, I haven't</label>	
+					</fieldset>
+					</div>
+					
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Would you watch it again?</legend>
+					     	<input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2" class="required" checked="checked" data-theme="b"/>
+					     	<label for="radio-choice-2">Yes, I would</label>
+					     	<input type="radio" name="radio-choice-2" id="radio-choice-3" value="choice-3" data-theme="a"/>
+					     	<label for="radio-choice-3">No, I would not</label>
+					</fieldset>
+					</div>
+				
+						<div data-role="fieldcontain">
+							<label for="slider-1">Rate Movie:</label>
+							<input type="range" name="slider-1" id="slider-1" value="5" min="0" max="10" data-theme="a" data-track-theme="b" />
+						</div>
+						<div data-role="fieldcontain">
+								<label for="textarea-a">Notes:</label>
+									<textarea name="notes" id="textarea-a" placeholder="Place any notes or comments here for future reference.">
+									</textarea>
+						</div>
+						
+						<div data-role="fieldcontain">
+							<input type="reset" value="Reset" data-theme="a"/> 
+							<input type="submit" value="Submit" data-theme="b"/>
+		  				</div>
+		  		</form> 	   
+		   	
+		</div>
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="forward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/mypage/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-3" data-icon="home">My Repo</a></li>
+				</ul>
+		</div>
+		
+		</div>
+		
+		</div>
+	
+	</div>
+		
+	</div>
+
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+		
+	</body>
+</html>

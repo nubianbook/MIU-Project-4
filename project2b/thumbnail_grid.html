@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Thumbnail Grid</title>
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+	</head>
+	
+	<body>
+		<div data-role="page" id="thumbnail_one" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Thumbnail Grid</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+				<p>				
+				   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+				</p>
+			</form> 
+			<h2 align="center">Thumbnail Grid</h2>
+			
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/misery.png" width="100px" height="170px"><br/>Check it out<br/> Order Today</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/scary.png" width="100px" height="170px"><br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/family_pic.png" width="100px" height="170px"><br/>Funny</div>  	
+		  	</div> 
+		  	<br />
+		  	<div class="ui-grid-b" style="height:200px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/misery.png" width="100px" height="170px"><br/>Check it out</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/scary.png" width="100px" height="170px"><br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/family_pic.png" width="100px" height="170px"><br/>Funny</div>
+		  	</div> 	
+		  	<br />
+		  	<div class="ui-grid-b" style="height:200px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/misery.png" width="100px" height="170px"><br/>Check it out</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/scary.png" width="100px" height="170px"><br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/family_pic.png" width="100px" height="170px"><br/>Funny</div>
+		  	</div>    	   
+		   	
+		 </div>
+		 
+		 <div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	 </div>	  
+		
+	</body>
+</html>

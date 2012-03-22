@@ -1,0 +1,343 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Movie Tracker B</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Movie Tracker B</h1>
+		</div> <!-- this close header-->
+		<br />
+			<!-- start cta -->
+			<p align="center">
+			<img src="images/cta_logo.png" width="200px" height="200px">
+			  
+		   </p>
+		   <p id="pg1_link">
+		       <a href = "additem.html" data-ajax="false">Enter VFW-Form</a>
+		       <a href = "form.html" data-ajax="false">Enter Form-B</a>
+		   </p>
+
+		   	<div data-role="content" data-add-back-btn="true">
+			
+			<h2 align="center">List Inlay</h2>
+			
+  		   <div data-role="listview" data-filter="true" />
+		   	<div data-role="collapsible" >
+		      <h3>Sifi</h3>
+		      <p>Back to the Future</p>
+		      <p>2012</p>
+		      <p>Star Trek</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Drama</h3>
+		      <p>Who's Afraid of Virginia Wolf</p>
+		      <p>To Kill a Mockingbird</p>
+		      <p>Whatever Happened to Baby Jane</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Horror</h3>
+		      <p>Screen Theater</p>
+		      <p>The People Under the Stairs</p>
+		      <p>Nightmare on Elm Street</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Comedy</h3>
+			      <p>Around the World in Eighty Days</p>
+			      <p>The Nutty Professor</p>
+			      <p>Blazing Saddles</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Family</h3>
+			      <p>Marmaduke</p>
+			      <p>Shrek</p>
+			      <p>The SandLot</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Romance</h3>
+			      <p>To Sir with Love</p>
+			      <p>Sleepless in Seattle</p>
+			      <p>Pretty Woman</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Documentary</h3>
+			      <p>The History of Baseball</p>
+			      <p>The Tuskegee Airmen</p>
+			      <p>American Experience</p>
+		    </div>
+		    		      		       
+		 </div> 
+		</div>		
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="../index.html" data-icon="home">A App</a></li>
+					<li><a href="project2b/index.html" class="ui-btn-active" data-icon="forward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/mypage/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-3" data-icon="home">My Repo</a></li>
+				</ul>
+		   </div>
+		
+	</div>
+	</div>
+	
+	<div data-role="page" id="drilldown" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>One Window Drilldown</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>One Window Drilldown</h2>
+			
+		  		   
+		   	
+		   	<p align="center">Browse Categories:</p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	 List Inlay 
+	
+	<!--<div data-role="page" id="listInlay" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Movie Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+				<p>				
+				   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+				</p>
+			</form> 
+			<h2>List Inlay</h2>
+  		   
+		   	
+		   	<p align="center">Browse Categories:</p>
+		   	<div data-role="collapsible" >
+		      <h3>Sifi</h3>
+		      <p>Back to the Future</p>
+		      <p>2012</p>
+		      <p>Star Trek</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Drama</h3>
+		      <p>Who's Afraid of Virginia Wolf</p>
+		      <p>To Kill a Mockingbird</p>
+		      <p>Whatever Happened to Baby Jane</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Horror</h3>
+		      <p>Screen Theater</p>
+		      <p>The People Under the Stairs</p>
+		      <p>Nightmare on Elm Street</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Comedy</h3>
+		      <p>Around the World in Eighty Days</p>
+		      <p>The Nutty Professor</p>
+		      <p>Blazing Saddles</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Family</h3>
+		      <p>Marmaduke</p>
+		      <p>Shrek</p>
+		      <p>The SandLot</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Romance</h3>
+		      <p>To Sir with Love</p>
+		      <p>Sleepless in Seattle</p>
+		      <p>Pretty Woman</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Documentary</h3>
+		      <p>The History of Baseball</p>
+		      <p>The Tuskegee Airmen</p>
+		      <p>American Experience</p>
+		    </div>
+		    		      		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>-->
+	
+	<!-- Under Construction -->
+	
+	<div data-role="page" id="under_construction" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Under Construction</h1>
+		</div>
+		
+		<div data-role="content">
+			<br />
+			<h1 align="center">
+			
+			       <img src="images/cta_logo.png" width="200px" height="200px">
+			       <p>This Page is Under Construction</p>
+			   
+		    </h1>
+		    		   
+		 <br />
+		 <br /> 
+		 </div>
+		
+			
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	 Thumbnail_grid 
+				
+		<!--<div data-role="page" id="thumbnail_grid" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Thumbnail Grid</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+				<p>				
+				   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+				</p>
+			</form> 
+			<h2 align="center">Thumbnail Grid</h2>
+			
+		  	<div class="ui-grid-b">
+		  	
+				<div class="ui-grid-b" style="height:220px" align="center"  data-filter="true">
+				<div class="ui-block-a" class="ui-bar"><img src="images/misery.png" width="100px" height="170px"><br/>Check it out<br/> Order Today</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/scary.png" width="100px" height="170px"><br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/family_pic.png" width="100px" height="170px"><br/>Funny</div>  	
+		  	</div> 
+		  	<br />
+		  	<div class="ui-grid-b" style="height:200px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/misery.png" width="100px" height="170px"><br/>Check it out</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/scary.png" width="100px" height="170px"><br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/family_pic.png" width="100px" height="170px"><br/>Funny</div>
+		  	</div> 	
+		  	<br />
+		  	<div class="ui-grid-b" style="height:200px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/misery.png" width="100px" height="170px"><br/>Check it out</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/scary.png" width="100px" height="170px"><br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/family_pic.png" width="100px" height="170px"><br/>Funny</div>
+		  	</div>    	
+		  	
+		  	</div> 	   
+		   	
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="../index.html" data-icon="home">A App</a></li>
+					<li><a href="project2b/index.html" class="ui-btn-active" data-icon="forward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/test/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
+				</ul>
+		</div>
+		
+		</div>-->
+		
+		
+		<!--<div data-role="page" id="news_stream" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>News Stream</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>News Stream</h2>
+			
+		  		   
+		   	
+		   	<p>Browse Categories:</p><br/>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+
+		
+	</div>
+		
+	</div>-->
+
+
+
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+
+</body>
+</html>

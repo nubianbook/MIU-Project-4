@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Form</title>
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	</head>
+	
+	<body>
+	
+		<div data-role="page" id="my_form">
+		
+		<h1 data-add-back-btn="true">
+			<img src="images/brand_logo.png" width="56px" height="50px" hspace="42px" valign="5px">
+			<p id="brand"><img src="images/text_logo.png" width="170px" height="25px"></p>
+		</h1>
+		
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h2>Archive with Ease</h2>
+		</div>
+		
+		<div data-role="content" data-add-back-btn="true">
+					  			
+		  		<form action="" method="post" id="myform" data-transition="pop" data-mini="true">
+		  			<p id="required">* Required Fields</p>
+		  			<label for="genre" class="select"></label> 
+						<select name="genre" id="genre" data-theme="b"> 
+							 <option selected value="select">--- Select Genre ---</option> 
+							 <option value="siFi">SiFi</option> 
+							 <option value="drama">Drama</option>
+							 <option value="horror">Horror</option>
+							 <option value="family">Family</option>
+							 <option value="romance">Romance</option>
+							 <option value="documentary">Documentary</option>
+						</select>
+						
+						<br />
+						
+						<div data-role="fieldcontain" class="demo">
+							<label for="title">* Movie Title:</label>
+							<input type="text" name="title" id="title" placeholder="Movie Title" class="required"/>
+						</div>
+						<div data-role="fieldcontain" class="demo">
+							<label for="date">* Date Watched:</label>	
+							<input name="datepicker" id="datepicker" type="text" placeholder="Date" class="required"/>        			
+						</div>
+						<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup>"	
+							<legend>How did you acquire this movie?<br/><small>(check all that apply)</small></legend> 
+								<input type="checkbox" value="download" name="checkbox-1" id="checkbox-0" class="custom" data-theme="b" checked="checked" class="required"/>
+								<label for="checkbox-0">Download</label>
+								<input type="checkbox" value="purchase" name="checkbox-1" id="checkbox-2" class="custom" data-theme="b"/>
+								<label for="checkbox-2">Purchase</label>
+								<input type="checkbox" value="purchase" name="checkbox-3" id="checkbox-3" class="custom" data-theme="b"/>
+								<label for="checkbox-3">Gift</label>
+							</fieldset>	
+							</div>
+							
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Have you seen this movie before?</legend>
+					     	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" class="required" checked="checked" data-theme="b"/>
+					     	<label for="radio-choice-1">Yes, I have</label>
+					     	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2" data-theme="a"/>
+					     	<label for="radio-choice-2">No, I haven't</label>	
+					</fieldset>
+					</div>
+					
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Would you watch it again?</legend>
+					     	<input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2" class="required" checked="checked" data-theme="b"/>
+					     	<label for="radio-choice-2">Yes, I would</label>
+					     	<input type="radio" name="radio-choice-2" id="radio-choice-3" value="choice-3" data-theme="a"/>
+					     	<label for="radio-choice-3">No, I would not</label>
+					</fieldset>
+					</div>
+				
+						<div data-role="fieldcontain">
+							<label for="slider">Rate Movie:</label>
+							<input type="range" name="slider" id="slider" value="5" min="0" max="10" data-theme="b" data-mini="true"/>
+						</div>
+						<div data-role="fieldcontain">
+							<label for="textarea-a">Notes:</label>
+							<textarea name="notes" id="textarea-a"></textarea>
+									
+						</div>
+						
+						<div data-role="fieldcontain" >
+							<input type="Submit" value="Submit" data-theme="b" id="submit"/> 
+							<input type="reset" value="Reset" data-theme="c" id="reset"/>
+		  				</div>
+		  		</form> 	   
+		   	
+		</div>
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="forward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/mypage/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
+				</ul>
+		</div>
+		
+		</div>
+		
+		</div>
+	
+	</div>
+		
+	</div>
+
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+			
+	</body>
+</html>

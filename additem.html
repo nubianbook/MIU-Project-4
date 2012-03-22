@@ -1,0 +1,106 @@
+<!doctype>
+<!--
+Title: form.html
+Visual Frameworks
+Project 4 Web-App Part 4
+Carol Gaylor
+Feb.23,2012
+-->
+	 	 	  
+<html>
+
+<head>
+			
+		<!--Character Set--> 
+		
+			<meta charset="utf-8" />
+			<meta name="description" content="This is my HTML5 document for an App." />
+			<meta name="keywords" content="html5, mobile development, Full Sail University" />
+			<meta name="robots" content="index, follow" />
+			<meta name="viewport" content="user-scalable = no, width = device-width" />
+			
+		<!--Document Title-->		
+				<title>Movie Tracker</title>
+				<link href="css/styles.css" rel="stylesheet" type="text/css" />
+				
+</head>
+		   
+		<!--Beginning Body-->
+	
+<body>
+
+<div id="contain">
+			<h1>Archive Movie</h1>
+			<nav>
+			<a href="#" id="clearData">Clear Stored Data</a>
+			<a href="#" id="displayData">Display Data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add New Movie</a>
+			</nav>
+	<div id="wrap">
+	<div id="innerForm">
+		<fieldset id="theField">
+			<legend>Movie Info</legend>
+				<form method="post" enctype="text/plain" id="myform" name="f1" action="#" data-ajax="false">
+				  <div id="categories"></div>
+				  <ul id="errors"></ul>
+					<p>Movie title:				
+						<input type="text" id="movName" name="title" size="40" maxlength="40" onfocus="fieldColor_1();"/><br/> 
+					</p>
+					<p>
+						Date watched:<input type="text" id="sawName" name="dateWatched" size="10" maxlength=10 onfocus="fieldColor_3();"/> 
+					</p>
+					<p>This movie was?</p>
+						<ul id="boxesCk">
+							<li><input type="checkbox" id="yes" name="downloaded" value="download">Downloaded</li>
+							<li><input type="checkbox" id="no" name="downloaded" value="gift">Gift</li>
+						</ul>
+					<p>Was movie?</p>
+						<label for="rent">rented</label> 
+						<input type="radio" id="rentName" name="acquired" value ="Rented">
+						<label for="purchase">purchased</label>
+						<input type="radio" id="purchaseName" name="acquired" value ="Purchased">			
+					<p>Have you viewed this movie before?</p>
+						<label for="yes">yes</label> 
+						<input type="radio" name="viewed" value="yes" id="yes">
+						<label for="no">no</label>
+						<input type="radio" name="viewed" value="no" id="no">					
+					<p>Would you watch it again?</p>
+						<label for="yes">yes</label>
+						<input type="radio" name="watch" value ="yes" id="yes"> 
+						<label for="no">no</label>
+						<input type="radio" name="watch" value ="no" id="no">
+					</fieldset>	
+					<fieldset>
+					<legend>More Info</legend>					
+				   	<p id="rate">Rate:</p></p>
+					   	<input type="radio" id="three" name="rate" value="3 stars"/>
+					   	<label for"3">3 stars</label>
+					   	<input type="radio" id="two" name="rate" value="2 stars"/>
+					   	<label for"2">2 stars</label>
+					   	<input type="radio" id="one"  name="rate" value="1 star"/>
+					   	<label for"1">1 star</label> 
+				   <br/>
+		<!-- this is the slider -->	
+				<div id="slider">		  
+				   		<label for="range-slider"><span id="amend">Recommend:<small>(range 1-10)</small></span></label>
+				   		<input type="range" name="range" id="range-slider" class="slider" min="0" max="10" step="1" value="0">
+				</div>
+		<!-- this is the textarea -->							
+						<span id="box">Likes and dislikes about movie:</span><br/>					
+						<textarea name ="notes" id="noteName" onfocus="fieldColor_4();" rows="5" cols="30" wrap></textarea><br/>
+		<!-- this is the submit/reset buttons -->
+						<input type="submit" id="submit" value="Submit" />
+						<input type="reset" id="reset" value="Reset" />
+			</form>	
+	      </fieldset>
+	      </div>
+	    </div>  <!-- end of wrap div -->
+	 </div> <!-- end of contain div -->
+   <script src="js/json.js" type="text/javascript"></script>	 
+   <script src="js/main.js" type="text/javascript"></script>		 
+ </body>
+		
+		
+
+
+</html>

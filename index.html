@@ -1,0 +1,490 @@
+ <!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Movie Tracker</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.18.custom.css" type="text/css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page" id="home">
+	
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>Movie Tracker</h1>
+		</div>
+		<br />
+			
+			<p align="center">
+			<img src="images/cta_logo.png" width="200px" height="200px">
+			  
+		   </p>
+		   <p id="pg1_link">
+		       <a href = "form.html" data-ajax="false">Enter Form A</a>
+		   </p>
+		   
+		   	<div data-role="content" data-add-back-btn="true">
+
+		   	<ul data-role="listview" data-filter="true">
+		      <li>
+			    <a href ="#under_construction">
+			      <img src="images/disaster.png" width="60px" height="104">
+			      	<h3>SiFi</h3>
+			      	   <p>This Page is under Construction</p>
+		        </a>
+		      </li>
+		      <li>
+			      <a href ="#thumbnail_grid">
+			      	<img src="images/misery.png" width="60px" height="104">
+			         <h3>Drama</h3>
+			      		<p>Take a look at the large selection of Movies</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#news_stream"><img src="images/scary.png" width="60px" height="104">
+			         <h3>Streaming Movie News</h3></h3>
+			      		<p>Keep up with latest News and Gossip</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#tabs"><img src="images/comedy2.png" width="60px" height="104">
+			         <h3>Comedy is King</h3>
+			      		<p>Extra Credit Tabs Demo</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/family_pic.png" width="60px" height="104">
+			         <h3>Family</h3>
+			      		<p>This page is under construction</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/love.png" width="60px" height="104">
+			         <h3>Romance</h3>
+			      		<p>This page is under construction</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/planet_earth.png" width="60px" height="104">
+			         <h3>Documentary</h3>
+			      		<p>This page is under construction</p>
+		      	  </a>
+		      </li>
+		       
+		   </ul>
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="forward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/mypage/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-3" data-icon="home">My Repo</a></li>
+				</ul>
+		   </div>
+		
+	</div>
+	</div>
+	
+	<div data-role="page" id="drilldown" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>One Window Drilldown</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>One Window Drilldown</h2>
+			
+		  		   
+		   	
+		   	<p align="center">Browse Categories:</p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<!-- List Inlay -->
+	
+	<div data-role="page" id="listInlay" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Movie Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+				<p>				
+				   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+				</p>
+			</form> 
+			<h2>List Inlay</h2>
+  		   
+		   	
+		   	<p align="center">Browse Categories:</p>
+		   	<div data-role="collapsible" data-filter="true">
+		      <h3>Sifi</h3>
+		      <p>Back to the Future</p>
+		      <p>2012</p>
+		      <p>Star Trek</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Drama</h3>
+		      <p>Who's Afraid of Virginia Wolf</p>
+		      <p>To Kill a Mockingbird</p>
+		      <p>Whatever Happened to Baby Jane</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Horror</h3>
+		      <p>Screen Theater</p>
+		      <p>The People Under the Stairs</p>
+		      <p>Nightmare on Elm Street</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Comedy</h3>
+		      <p>Around the World in Eighty Days</p>
+		      <p>The Nutty Professor</p>
+		      <p>Blazing Saddles</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Family</h3>
+		      <p>Marmaduke</p>
+		      <p>Shrek</p>
+		      <p>The SandLot</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Romance</h3>
+		      <p>To Sir with Love</p>
+		      <p>Sleepless in Seattle</p>
+		      <p>Pretty Woman</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Documentary</h3>
+		      <p>The History of Baseball</p>
+		      <p>The Tuskegee Airmen</p>
+		      <p>American Experience</p>
+		    </div>
+		    		      		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<!-- Under Construction -->
+	
+	<div data-role="page" id="under_construction" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Under Construction</h1>
+		</div>
+		
+		<div data-role="content">
+			<br />
+			<h1 align="center">
+			
+			       <img src="images/cta_logo.png" width="200px" height="200px">
+			       <p>This Page is Under Construction</p>
+			   
+		    </h1>
+		    		   
+		 <br />
+		 <br /> 
+		 </div>
+		
+			
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<!-- Thumbnail_grid -->
+				
+		<div data-role="page" id="thumbnail_grid" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Thumbnail Grid</h1>
+		</div>
+		
+		<div data-role="content">
+			
+			<h2 align="center">Thumbnail Grid</h2>
+			<br />
+		  	<div class="ui-grid-b" data-role="listview" data-filter="true">
+		  	
+				<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/drama1.png" width="90px" height="160px"><br/>Beautiful Mind<br/> Order Today</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/drama2.png" width="90px" height="160px"><br/>If Only<br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/drama3.png" width="90px" height="160px"><br/>Sister's Keeper<br/>On Sale</div>  	
+		  	</div> 
+		  	<br />
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/drama4.png" width="90px" height="160px"><br/>Young Victoria<br/>On Sale</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/drama5.png" width="90px" height="160px"><br/>88 minutes<br/>Just Released</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/drama6.png" width="90px" height="160px"><br/>Frost/Nixon<br/>On Sale</div>
+		  	</div> 	
+		  	<br />
+		  	<div class="ui-grid-b" style="height:220px" align="center">
+				<div class="ui-block-a" class="ui-bar"><img src="images/drama7.png" width="90px" height="160px"><br/>The Road<br/>Sold Out</div>
+				<div class="ui-block-b" class="ui-bar"><img src="images/drama8.png" width="90px" height="160px"><br/>Public</div>
+				<div class="ui-block-c" class="ui-bar"><img src="images/drama9.png" width="90px" height="160px"><br/>Funny</div>
+		  	</div>    	
+		  	
+		  	</div> 	   
+		   	
+		</div>
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="forward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/mypage/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-3" data-icon="home">My Repo</a></li>
+				</ul>
+		</div>
+		
+		</div>
+		
+		</div>
+		<div data-role="page" id="news_stream" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>News Stream</h1>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+		      <li>
+			    <a href ="#">
+			      <img src="images/face1.png" width="55px" height="55" hspace="5px" vspace="15px">
+			      	<h3>SiFi</h3>
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 8 mins ago   --via Twitter--</small></span>
+		        </a>
+		      </li>
+		      <li>
+			      <a href ="#">
+			      	<img src="images/face2.png" width="55px" height="55" hspace="5px" vspace="15px">
+			         <h3>Drama</h3>
+			  
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 14 mins ago   --via Scoop.com--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face3.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Horror</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 1 hr ago   --via Twitter--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face4.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Comedy</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 2 hrs ago   --via Facebook--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face5.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Family</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 6 hrs ago   --via Facebook--</small></span>
+		          </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face6.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Romance</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 14 hrs ago   --via ImageOff.net--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#"><img src="images/face7.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Documentary</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 3 days ago   --via GlobeTV.com--</small></span>
+		      	  </a>
+		      </li>
+		       <li>
+			      <a href ="#under_construction"><img src="images/face8.png" width="55px" height="73" hspace="5px" vspace="15px">
+			         <h3>Documentary</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 3 days ago   --via GlobeTV.com--</small></span>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href ="#under_construction"><img src="images/face9.png" width="55px" height="73" >
+			         <h3>Documentary</h3>
+			      		
+			      	   <p><i><b>MrMovie</b></i> - My wife and I saw this movie about a year ago<br/>
+			      	   we were on the edge of our seat</p>
+			      	   <span><small>about 3 days ago   --via GlobeTV.com--</small></span>
+		      	  </a>
+		      </li>
+
+
+		   </ul>
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="forward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/mypage/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-3" data-icon="home">My Repo</a></li>
+				</ul>
+		   </div>
+		   </div>
+		   </div>
+	
+	<div data-role="page" id="tabs" data-add-back-btn="true">
+		<h1>
+			<img src="images/brand_logo.png" width="56px" height="50px" hspace="42px" valign="5px">
+			<p id="brand"><img src="images/text_logo.png" width="170px" height="25px"></p>
+		</h1>
+	
+		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true" >
+			<h2>Jquery Tab Controls</h2>
+		</div>
+		
+		<div data-role="content">
+			
+			<div class="demo">
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Oldies Goldies</a></li>
+		<li><a href="#tabs-2">Favorite Laughs</a></li>
+		<li><a href="#tabs-3">Walt Disney</a></li>
+	</ul>
+	<div id="tabs-1">
+		<p>It's always a hot debate, how to evaluate old movies. You'll often hear 
+		the words "good for its time" or 
+		"a timeless classic" as opposed to "crude" or "outdated". Some will think the recent exploitative horror 
+		cinema is inferior to its ancestors while the others will find the old ones
+		 "not scary enough". 
+		It's like a generation gap in cinema. Younger audiences tend to be upset 
+		by the lack of certain 
+		things from movies, such as computer generated imagery, actors they 
+		recognize, actors that are alive, 
+		non-theatrical acting, passionate french kissing etc. 
+		The shortage on colors and sound doesn't help the 
+		situation either. Therefore they are often blamed for 
+		not paying enough attention to the likes of Orson 
+		Welles, Federico Fellini, Alfred Hitchcock, Stanley Kubrick, 
+		Akira Kurosawa and many others. The older
+		generation on the other hand, is commonly accused of being conservative 
+		and close-minded about recent movies. 
+		<font color="red">This is from http://www.long-take.com/2008/04/oldies-but-goldies.html</font></p>
+	</div>
+	<div id="tabs-2">
+		<p>During the final days at Denver's old Stapleton airport, a crowded United flight was canceled.
+A single agent was rebooking a long line of inconvenienced travelers. Suddenly an angry passenger pushed his 
+way to the desk. He slapped his ticket down on the counter and said, "I HAVE to be on this flight and it has
+ to be FIRST CLASS."
+The agent replied, "I'm sorry sir. I'll be happy to try to help you, but I've got to help these folks first,
+ and I'm sure we'll be able to work something out."
+The passenger was unimpressed. He asked loudly, so that the passengers behind him could hear, "Do you have 
+any idea who I am?"
+Without hesitating, the gate agent smiled and grabbed her public address microphone. "May I have your attention please?" she began, her voice bellowing throughout the terminal. "We have a passenger here at the gate WHO DOES NOT KNOW WHO HE IS. If anyone can help him find his identity, please come to the gate."
+With the folks behind him in line laughing hysterically, the man glared at the United agent, gritted his teeth and swore "(Expletive) you."
+Without flinching, she smiled and said, "I'm sorry, sir, but you'll have to stand in line for that, too."
+The man retreated as the people in the terminal applauded loudly. Although the flight was canceled and people were late, they were no longer angry at United. <font color="red">This came from http://paws.kettering.edu/~jhuggins/humor/airline.html</font></p>
+	</div>
+	<div id="tabs-3">
+		<p>Try to imagine a world without Walt Disney. A world without his magic, whimsy, and optimism. Walt Disney transformed the entertainment industry, into what we know today. He pioneered the fields of animation, and found new ways to teach, and educate.
+Walt's optimism came from his unique ability to see the entire picture. His views and visions, came from the fond memory of yesteryear, and persistence for the future. Walt loved history. As a result of this, he didn't give technology to us piece by piece, he connected it to his ongoing mission of making life more enjoyable, and fun. Walt was our bridge from the past to the future.
+During his 43-year Hollywood career, which spanned the development of the motion picture industry as a modern American art, Walter Elias Disney established himself and his innovations as a genuine part of Americana. <font color="red">This is from http://www.justdisney.com/walt_disney/</font></p>
+	</div>
+	
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-icon="home" class="ui-btn-active">A App</a></li>
+					<li><a href="project2b/index.html" data-icon="foward">B App</a></li>
+					<li><a href="http://nubianbook.github.com/mypage/" data-icon="forward">My Page</a></li>
+					<li><a href="https://github.com/nubianbook/MIU-Project-2" data-icon="home">My Repo</a></li>
+				</ul>
+		</div>
+		
+		</div>
+		
+		</div>
+	
+	</div>
+		
+	</div>
+
+
+	
+
+	<!-- JavaScript under here -->
+	
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+
+</body>
+</html>

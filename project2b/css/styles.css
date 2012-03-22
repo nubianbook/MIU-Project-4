@@ -1,0 +1,187 @@
+/* 
+Title: styles.css
+Visual Frameworks
+Project 4 Web-App Part 4
+Carol Gaylor
+Feb.23,2012 
+*/ 
+
+ 
+   body {
+   		  border: 1px solid #3d1efb; 
+		  font-family: Arial, Tacoma, Geneva, sans serif;
+   		  width: 320px;
+   		  margin: auto;
+   }
+   
+  #wrap {
+   		 background-color: #d4e1f2;
+   		 margin: 0;
+   		 padding: 10px;		   
+   }
+   
+   #contain {
+   			 margin: 0;
+   			 padding: 0;
+   			 background: #d4e1f2;
+   }
+   #front_wrap {
+   				border: 1px solid blue;
+   				/*background-color: #d4e1f2;*/
+   }
+      
+   h1 {	
+   	    color: #3d1efb;
+   	/*  border-top: 2px  solid red;
+	   border-bottom: 2px  solid red;*/
+	   /*padding: 10px 0 10px 10px;*/
+	   background: #dce5ea; 
+	   font-size: 24px;                     
+	   text-align: center;		  
+   }
+   
+   #pg1 {
+   		 text-indent: 1em;
+   		 margin: 12px;
+   }
+   
+   #pg1_link {
+   			  display: inline;
+   			  font-size: 25px;
+   			  font-weight: bold;
+   			  font-color: red; 
+   		      text-align: center;
+   		      margin-top: -70px;
+   		      margin-left: 90px;
+   }
+   
+   #btn {
+   		  margin-top: 75px;
+   } 
+   
+   #browse {
+   			text-align: left;
+   }  
+   
+  #items {
+   		   margin: -10px 0 0 0;
+   		   padding: 2px 50px 10px 10px;
+   		   font-size: 15px;
+   		   line-height: 2em;
+   		   border-bottom: 2px solid red; 
+   		   background-color: #d4e1f2;   		    
+   }
+   
+  #errors {
+  			font-size: 14px;
+  			color: red;
+  }
+     
+   p {
+   	  font-size: 14px;
+   	  line-height: 1em;
+   }
+   
+   ul {
+   
+   }
+   
+   li {
+   	   text-decoration: none;
+   	   display: block;
+   }
+      	 
+   a {
+   	  font-size: 12px;
+   	  padding: 0 50px 0 0;	
+   }
+   
+   a:hover {
+   			color: #ff0000;
+   }
+   
+   #logo {
+   		  size: 200px;
+   		  padding: 10px 0 0 58px;
+   }
+   
+   img ul li{
+   			 text-decoration: none;
+   			 text-align: center;
+   		     padding: 10px 0 0 22px;
+   		     background: #dce5ea;
+   }
+   
+   ul li ul {
+   			 text-decoration: none;
+   }
+   
+   ul li ul li{
+   		       background-color: #dce5ea;
+   		       margin-left: -60px;
+   		       margin-right: -25px;
+   		       padding-left: 25px;
+   		       padding-right:30px;
+   		       border-left:  1px solid #3d1efb;
+   		       border-right: 1px solid #3d1efb;  		 
+   }
+   
+   legend {	
+   		   padding: 0 2px 0 4px;
+   		   font-size: 18px;
+   		   font-weight: 500;
+   		   color: #3d1efb;
+   		   border: 1.5px solid red;
+   		   background: #dce5ea;
+   }
+   
+   #categories {
+   				font-size: 20px; 
+   	            color: #3d1efb;
+   	            text-align: center;  
+   			    padding: 0;
+   			    margin: 2px 0 0 0;
+   			    text-align: center;
+   			    display: compact;  			
+   }
+   
+  input, label {
+  				line-height: 1em;
+  				margin: 0 0 0 .5em;
+		        display: inline;
+   }
+   
+   label {
+   		  font-size: 14px;
+   }
+   	
+  #amend{
+    	 line-height: 2em;			
+   }   
+  
+  .date {
+  		 margin: 0 1em 0 0;
+  		 display: inline;
+  }
+  
+  #box {
+  		font-size: 14px;
+  		line-height: 2em;
+  }  
+ 
+  nav {
+  	   margin: -6px 0 0 0;
+  	   text-align: right;
+  }
+  
+  #slider {
+ 		  text-align: center;
+ 		  line-height: -5em;
+ }
+  
+ #boxesCk {
+ 			font-size: 13px;
+ }        
+     
+   
+   
